@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Павел Качуровский](https://up.htmlacademy.ru/htmlcss/27/user/1152113).
-* Наставник: [Сергей Скубида](https://htmlacademy.ru/profile/id1210299).
+* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 
