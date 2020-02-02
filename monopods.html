@@ -10,7 +10,12 @@
         <a href="index.html">
           <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
-        <!-- Здесь будет форма поиска -->
+        <form action="index.html" method="post">
+          <p>
+            <button type="submit" name="start-search">Найти</button>
+            <input type="search" name="search" placeholder="Поиск по сайту">
+          </p>
+        </form>
         <ul>
           <li><a href="#">Валентин Петухов</a></li>
           <li><a href="#">Выйти</a></li>
@@ -44,7 +49,51 @@
         <li><a href="catlog.html" title="Каталог">Каталог</a></li>
         <li><a>Моноподы для селфи</a></li>
       </ul>
-      <!-- Здесь будут формы фильтра и сортировки -->
+<!-- Filter & Sort -->
+      <section>
+        <h2>Фильтр:</h2>
+        <form action="index.html" method="post">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="black" id="filter-color-black" checked>
+                <label for="filter-color-black">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="white" id="filter-color-white">
+                <label for="filter-color-white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="blue" id="filter-color-blue" checked>
+                <label for="filter-color-blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="red" id="filter-color-red" checked>
+                <label for="filter-color-red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="pink" id="filter-color-pink">
+                <label for="filter-color-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input type="radio" name="bluetooth" value="yes" id="filter-bluetooth-yes" checked>
+                <label for="filter-bluetooth-yes">Есть</label>
+              </li>
+              <li>
+                <input type="radio" name="bluetooth" value="no" id="filter-bluetooth-no">
+                <label for="filter-bluetooth-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" name="submit">Показать</button>
+        </form>
+      </section>
       <ul>
         <li>
           <a><h3>Любительская селфи-палка</h3></a>

@@ -10,7 +10,12 @@
         <a>
           <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
-        <!-- Здесь будет форма поиска -->
+        <form action="index.html" method="post">
+          <p>
+            <button type="submit" name="start-search">Найти</button>
+            <input type="search" name="search" placeholder="Поиск по сайту">
+          </p>
+        </form>
         <ul>
           <li><a href="#">Войти</a></li>
         </ul>
@@ -44,7 +49,7 @@
         <article>
           <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           <span>01</span>
-          <h3>Делай селфи,<br> как Бен Стиллер!</h3>
+          <h3>Делай селфи, как Бен Стиллер!</h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#">Подробнее</a>
           <dl>
@@ -59,7 +64,7 @@
         <article>
           <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
           <span>02</span>
-          <h3>Худеем<br> правильно!</h3>
+          <h3>Худеем правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#">Подробнее</a>
           <dl>
@@ -200,6 +205,28 @@
         </section>
       </div>
     </main>
+<!-- PopUp Write As -->
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button" name="modal-close">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="user-email" id="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label>
+            Текст письма:
+            <textarea name="user-content" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button type="submit" name="submit">Отправить</button>
+      </form>
+    </section>
     <footer>
       <a>
         <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
