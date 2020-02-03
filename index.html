@@ -84,7 +84,20 @@
             <dd>Радиус поражения</dd>
           </dl>
         </article>
-        <!-- Радиокнопки для переключения слайдов -->
+        <form action="index.html" method="post">
+          <p>
+            <label for="slider-1" class="visually-hidden">Слайд 1</label>
+            <input type="radio" name="slider-popular" id="slider-1" checked>
+          </p>
+          <p>
+            <label for="slider-2" class="visually-hidden">Слайд 2</label>
+            <input type="radio" name="slider-popular" id="slider-2">
+          </p>
+          <p>
+            <label for="slider-3" class="visually-hidden">Слайд 3</label>
+            <input type="radio" name="slider-popular" id="slider-3">
+          </p>
+        </form>
       </section>
 <!-- Popular -->
       <section>
@@ -131,11 +144,20 @@
 <!-- Services -->
       <section>
         <h2 class="visually-hidden">Наши услуги</h2>
-        <ul> <!-- Будет добавленны label радиокнопок для смены слайдов -->
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
-        </ul>
+        <form action="index.html" method="post">
+          <p>
+            <label for="services-delivery">Доставка</label>
+            <input type="radio" name="services" id="services-delivery" class="visually-hidden" checked>
+          </p>
+          <p>
+            <label for="services-warranty">Гарантия</label>
+            <input type="radio" name="services" id="services-warranty" class="visually-hidden">
+          </p>
+          <p>
+            <label for="services-credit">Кредит</label>
+            <input type="radio" name="services" id="services-credit" class="visually-hidden">
+          </p>
+        </form>
         <article>
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
