@@ -11,7 +11,7 @@
           <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
         <form action="index.html" method="post">
-            <button type="submit" name="start-search">Найти</button>
+            <button type="submit">Найти</button>
             <input type="search" name="search" id="search" placeholder="Поиск по сайту">
             <label for="search" class="visually-hidden">Поиск по сайту</label>
         </form>
@@ -43,134 +43,132 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
 <!-- Slider -->
-      <section>
-        <h2 class="visually-hidden">Популярные товары</h2>
-        <article>
-          <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+    <div class="slider-popular">
+    	<div class="slider-popular-item">
+        <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+        <div class="item-content">
           <span>01</span>
           <h3>Делай селфи, как Бен Стиллер!</h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#">Подробнее</a>
           <dl>
-            <dt>8,5 м</dt>
-            <dd>Длинна палки</dd>
-            <dt>5 кг</dt>
-            <dd>Вес палки</dd>
-            <dt>Карбон</dt>
-            <dd>материал</dd>
+            <div class="definition-item">
+              <dt>8,5 м</dt>
+              <dd>Длинна палки</dd>
+            </div>
+            <div class="definition-item">
+              <dt>5 кг</dt>
+              <dd>Вес палки</dd>
+            </div>
+            <div class="definition-item">
+              <dt>Карбон</dt>
+              <dd>материал</dd>
+            </div>
           </dl>
-        </article>
-        <article>
-          <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+        </div>
+      </div>
+    	<div class="slider-popular-item">
+        <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+        <div class="item-content">
           <span>02</span>
           <h3>Худеем правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#">Подробнее</a>
           <dl>
-            <dt>48 часов</dt>
-            <dd>Без подзарядки</dd>
+            <div class="definition-item">
+              <dt>48 часов</dt>
+              <dd>Без подзарядки</dd>
+            </div>
           </dl>
-        </article>
-        <article>
-          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер оснащеный мощным лазером">
+        </div>
+      </div>
+    	<div class="slider-popular-item">
+        <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер оснащеный мощным лазером">
+        <div class="item-content">
           <span>03</span>
           <h3>Порхает как бабочка, жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a href="#">Подробнее</a>
           <dl>
-            <dt>800 м</dt>
-            <dd>Дальность полета</dd>
-            <dt>50 м</dt>
-            <dd>Радиус поражения</dd>
+            <div class="definition-item">
+              <dt>800 м</dt>
+              <dd>Дальность полета</dd>
+            </div>
+            <div class="definition-item">
+              <dt>50 м</dt>
+              <dd>Радиус поражения</dd>
+            </div>
           </dl>
-        </article>
-        <form action="index.html" method="post">
-          <p>
-            <label for="slider-1" class="visually-hidden">Слайд 1</label>
-            <input type="radio" name="slider-popular" id="slider-1" checked>
-          </p>
-          <p>
-            <label for="slider-2" class="visually-hidden">Слайд 2</label>
-            <input type="radio" name="slider-popular" id="slider-2">
-          </p>
-          <p>
-            <label for="slider-3" class="visually-hidden">Слайд 3</label>
-            <input type="radio" name="slider-popular" id="slider-3">
-          </p>
-        </form>
-      </section>
+        </div>
+      </div>
+    	<div class="slider-popular-navigation">
+    		<button type="button">1</button>
+    		<button type="button">2</button>
+    		<button type="button">3</button>
+    	</div>
+    </div>
 <!-- Popular -->
       <section>
         <h2 class="visually-hidden">Популярные категории</h2>
         <ul>
           <li>
             <a href="#">
-              <div></div> <!-- Размер и фон будет рализовни при стилизации -->
+              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
               <p>Виртуальная реальность</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <div></div> <!-- Размер и фон будет рализовни при стилизации -->
+              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
               <p>Моноподы для селфи</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <div></div> <!-- Размер и фон будет рализовни при стилизации -->
+              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <div></div> <!-- Размер и фон будет рализовни при стилизации -->
+              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
               <p>Фитнес-браслеты</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <div></div> <!-- Размер и фон будет рализовни при стилизации -->
+              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
               <p>Умные часы</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <div></div> <!-- Размер и фон будет рализовни при стилизации -->
+              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
               <p>Квадрокоптеры</p>
             </a>
           </li>
         </ul>
       </section>
 <!-- Services -->
-      <section>
-        <h2 class="visually-hidden">Наши услуги</h2>
-        <form action="index.html" method="post">
-          <p>
-            <label for="services-delivery">Доставка</label>
-            <input type="radio" name="services" id="services-delivery" class="visually-hidden" checked>
-          </p>
-          <p>
-            <label for="services-warranty">Гарантия</label>
-            <input type="radio" name="services" id="services-warranty" class="visually-hidden">
-          </p>
-          <p>
-            <label for="services-credit">Кредит</label>
-            <input type="radio" name="services" id="services-credit" class="visually-hidden">
-          </p>
-        </form>
-        <article>
+      <div class="slider-services">
+        <div class="slider-services-navigation">
+          <button type="button">Доставка</button>
+          <button type="button">Гарантия</button>
+          <button type="button">Кредит</button>
+        </div>
+        <div class="slider-services-item">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </article>
-        <article>
+        </div>
+        <div class="slider-services-item">
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </article>
-        <article>
+        </div>
+        <div class="slider-services-item">
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </article>
-      </section>
+        </div>
+      </div>
 <!-- Partners -->
       <section>
         <h2 class="visually-hidden">Наши партнеры</h2>
@@ -252,31 +250,37 @@
       <img src="img/map-big.png" alt="Изображение карты">
     </section>
     <footer>
-      <a>
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-      </a>
-      <ul>
-        <li><a href="#">Войти</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-      <address>г. Москва, ул. Строителей, 15</address>
-      <ul>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      <ul>
-        <li><a href="#" title="Facebook" target="_blank">Facebook</a></li>
-        <li><a href="#" title="Instagram" target="_blank">Instagram</a></li>
-        <li><a href="#" title="Twitter" target="_blank">Twitter</a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
-      </a>
+      <div class="user-navigation">
+        <a>
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        </a>
+        <ul>
+          <li><a href="#">Войти</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="site-navigation">
+        <address>г. Москва, ул. Строителей, 15</address>
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div>
+      <div class="social-links">
+        <ul>
+          <li><a href="#" title="Facebook" target="_blank">Facebook</a></li>
+          <li><a href="#" title="Instagram" target="_blank">Instagram</a></li>
+          <li><a href="#" title="Twitter" target="_blank">Twitter</a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
