@@ -1,0 +1,319 @@
+@font-face {
+ font-family: "Gilroy Light";
+ src: url("../fonts/gilroylight.woff2") format("woff2"),
+        url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Gilroy ExtraBold";
+ src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+        url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+/* ---- header ---- */
+
+.header{
+  background-color: #f7e296;
+}
+
+.header ul{
+  list-style: none;
+}
+
+.header a{
+  color: #000000;
+}
+
+.header a:hover{
+  opacity: 0.6;
+}
+
+.header a:active{
+  opacity: 0.3;
+}
+
+.search input[type="search"]{
+  border: 0;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.search input[type="search"]:hover{
+  opacity: 0.6;
+}
+
+.search input[type="search"]:focus {
+  outline: 0;
+  opacity: 1;
+  border-bottom: 2px solid #000000;
+}
+
+.search button[type="submit"]{
+  background-color: transparent;
+  border: 2px solid #000000;
+  display: none;
+}
+
+.search input[type="search"]:focus + button{
+  display: inline-block;
+}
+
+.search button[type="submit"]:hover,
+.search button[type="submit"]:focus{
+  display: inline-block;
+  outline: 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search button[type="submit"]:active{
+  color: #434343;
+}
+
+.site-navigation{
+  line-height: 0;
+}
+
+.site-navigation a{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.site-navigation .drop-menu{
+  display: none;
+  margin-top: -1px;
+}
+
+.site-navigation .drop-menu:hover{
+  display: block;
+}
+
+.catalog-link:hover + .drop-menu{
+  display: block;
+}
+
+.header .exit-link{
+  opacity: 0.3;
+}
+
+/* ---- info ---- */
+.info h2{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.info .delivery-list{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  list-style: circle;
+}
+
+.info a{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  background-color: #f0c52e;
+}
+
+.info .map-link{
+  display: block;
+
+  background: none;
+}
+
+/* ---- footer ---- */
+
+.footer{
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.footer .footer-logo{
+  fill: #ffc600;
+}
+
+.footer a:hover{
+  opacity: 0.6;
+}
+
+.footer a:active{
+  opacity: 0.3;
+}
+
+.footer a{
+  color: #ffffff;
+}
+
+.footer ul{
+  list-style: none;
+}
+
+.footer-site-navigation ul{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-site-navigation address{
+  font-style: normal;
+}
+
+/* ---- modals ---- */
+.modal-write-us{
+  display: none;
+}
+
+.modal-map{
+  display: none;
+}
+
+/* ---- catalog page ---- */
+
+.catalog h1{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.catalog .breadcrumb{
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  opacity: 0.3;
+}
+
+.filter{
+  background-color: #efefef;
+}
+
+.filter h2{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  background-color: #dcdcdc;
+}
+
+.filter fieldset{
+  border: none;
+}
+
+.filter legend{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter ul{
+  list-style: none;
+}
+
+.filter button{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  background-color: #f0c52e;
+  border: none;
+}
+
+.catalog-items ul{
+  list-style: none;
+}
+
+.catalog-items .item-title{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-items .item-price{
+  color: #464646;
+}
+
+.catalog-items .to-basket{
+  display: none;
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+
+  background-color: #f0c52e;
+}
+
+.catalog-items .to-basket:hover{
+
+}
+
+.catalog-items .to-basket:active{
+  color: #be9c22;
+}
+
+.catalog-items .to-comparison{
+  display: none;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.catalog-items .to-comparison:hover{
+  opacity: 1;
+}
+
+.catalog-items .to-comparison:active{
+  opacity: 0.2;
+}
+
+.catalog-items img:hover ~ .to-basket,
+.catalog-items img:hover ~ .to-comparison{
+  display: inline-block;
+}
