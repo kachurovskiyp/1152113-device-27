@@ -57,6 +57,11 @@
           <h2>Фильтр:</h2>
           <form action="monopods.html" method="post">
             <fieldset>
+              <legend>Стоимость</legend>
+              <input type="range" name="price" id="price" value="0" min="0" max="10000">
+              <label for="price" class="visually-hidden">Стоимость</label>
+            </fieldset>
+            <fieldset>
               <legend>Цвет</legend>
               <ul>
                 <li>
@@ -94,13 +99,13 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Показать</button>
+            <button type="submit" class="button">Показать</button>
           </form>
         </section>
         <div class="inner-wrap">
-          <section>
+          <section class="sort">
             <h2>Сортировка:</h2>
-            <button type="button">По цене</button>
+            <button type="button" class="active">По цене</button>
             <button type="button">По типу</button>
             <button type="button">По популярности</button>
             <div class="sort-direction">
@@ -116,7 +121,7 @@
                 </a>
                 <p class="item-price">500 руб</p>
                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <a href="#" class="to-basket">В корзину</a>
+                <a href="#" class="button to-basket">В корзину</a>
                 <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
               <li>
@@ -125,7 +130,7 @@
                 </a>
                 <p class="item-price">1500 руб</p>
                 <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
-                <a href="#" class="to-basket">В корзину</a>
+                <a href="#" class="button to-basket">В корзину</a>
                 <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
               <li>
@@ -134,7 +139,7 @@
                 </a>
                 <p class="item-price">2500 руб</p>
                 <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <a href="#" class="to-basket">В корзину</a>
+                <a href="#" class="button to-basket">В корзину</a>
                 <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
               <li>
@@ -143,28 +148,28 @@
                 </a>
                 <p class="item-price">4900 руб</p>
                 <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                <a href="#" class="to-basket">В корзину</a>
+                <a href="#" class="button to-basket">В корзину</a>
                 <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
             </ul>
           </section>
-          <section>
+          <section class="catalog-navigation">
             <h2 class="visually-hidden">Навигация по страницам товаров</h2>
             <ul>
               <li>
-                <a href="#">Назад</a>
+                <a href="#" class="transition-direction">Назад</a>
               </li>
               <li>
-                <a href="#">1</a>
+                <a href="#" class="page-number">1</a>
               </li>
               <li>
-                <a href="#">2</a>
+                <a href="#" class="page-number inactive">2</a>
               </li>
               <li>
-                <a href="#">3</a>
+                <a href="#" class="page-number inactive">3</a>
               </li>
               <li>
-                <a href="#">Вперед</a>
+                <a href="#" class="transition-direction">Вперед</a>
               </li>
             </ul>
           </section>

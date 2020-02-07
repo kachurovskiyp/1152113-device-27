@@ -70,6 +70,19 @@ body{
   color: #000000;
 }
 
+.button{
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+
+  background-color: #f0c52e;
+  border: none;
+}
+
 /* ---- header ---- */
 
 .header{
@@ -170,6 +183,87 @@ body{
   opacity: 0.3;
 }
 
+/* ---- slider ---- */
+
+.slider-popular .slide-number{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 0.35px;
+
+  color: lightblue;  /* Временно, до сеток*/
+}
+
+.slider-popular h3{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.slider-popular p{
+  letter-spacing: 0.15px;
+}
+
+.slider-popular dt{
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.slider-popular dd{
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+/* ---- popular category ---- */
+
+.popular-category ul{
+  list-style: none;
+  padding: 0;
+}
+
+.popular-category p{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.popular-category-link:active p{
+  opacity: 0.3;
+}
+
+/* ---- services ---- */
+
+.slider-services-item h3{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.208444px;
+}
+
+.slider-services-item p{
+  letter-spacing: 0.15px;
+  color: #464646;
+}
+
+/* ---- partners ---- */
+
+.partners ul{
+  list-style: none;
+}
+
 /* ---- info ---- */
 
 .info h2{
@@ -190,18 +284,6 @@ body{
   font-weight: 700;
   line-height: 40px;
   list-style: circle;
-}
-
-.info a{
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-
-  background-color: #f0c52e;
 }
 
 .info .map-link{
@@ -326,21 +408,31 @@ body{
   list-style: none;
 }
 
-.filter button{
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-
-  background-color: #f0c52e;
-  border: none;
-}
-
 .catalog-items ul{
   list-style: none;
+}
+
+.sort h2{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.sort button{
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+  opacity: 0.3;
+  border: none;
+  background-color: transparent;
+}
+
+.sort button.active{
+  opacity: 1;
 }
 
 .catalog-items .item-title{
@@ -360,16 +452,6 @@ body{
 
 .catalog-items .to-basket{
   display: none;
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-
-  background-color: #f0c52e;
-}
-
-.catalog-items .to-basket:hover{
-
 }
 
 .catalog-items .to-basket:active{
@@ -393,4 +475,34 @@ body{
 .catalog-items img:hover ~ .to-basket,
 .catalog-items img:hover ~ .to-comparison{
   display: inline-block;
+}
+
+.catalog-navigation a{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.catalog-navigation a.inactive{
+  opacity: 0.3;
+}
+
+.catalog-navigation a.transition-direction:hover{
+  background-color: #d9d9d9;
+}
+
+.catalog-navigation a.transition-direction:active{
+  background-color: #d9d9d9;
+  color: #acacac;
+}
+
+.catalog-navigation a.page-number:hover{
+  opacity: 0.6;
+}
+
+.catalog-navigation a.page-number:active{
+  opacity: 1;
 }
