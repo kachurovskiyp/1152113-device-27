@@ -187,10 +187,10 @@ body{
 
 .slider-popular .slide-number{
   font-family: Gilroy;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 179px;
   line-height: 179px;
-  letter-spacing: 0.35px;
+  letter-spacing: 0.36px;
 
   color: lightblue;  /* Временно, до сеток*/
 }
@@ -206,6 +206,7 @@ body{
 
 .slider-popular p{
   letter-spacing: 0.15px;
+  color: #464646;
 }
 
 .slider-popular dt{
@@ -219,6 +220,7 @@ body{
 .slider-popular dd{
   margin: 0;
 
+  color: #464646;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.13px;
@@ -256,6 +258,10 @@ body{
 .slider-services-item p{
   letter-spacing: 0.15px;
   color: #464646;
+}
+
+.slider-services .button{
+  line-height: 24px;
 }
 
 /* ---- partners ---- */
@@ -382,6 +388,8 @@ body{
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
 
   background-color: #dcdcdc;
 }
