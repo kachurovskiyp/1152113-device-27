@@ -86,10 +86,42 @@ body{
 /* ---- header ---- */
 
 .header{
+  position: relative;
+  width: 1160px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+
   background-color: #f7e296;
 }
 
+.inner-header{
+  height: 190px;
+}
+
+.header .logo{
+  position: absolute;
+  top: -18px;
+  margin-left: 58px;
+}
+
+.header nav{
+  padding-top: 45px;
+}
+
+.header .header-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 1045px;
+  margin: 0 auto;
+  padding-bottom: 37px;
+}
+
 .header ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
   list-style: none;
 }
 
@@ -103,6 +135,10 @@ body{
 
 .header a:active{
   opacity: 0.3;
+}
+
+.header form.search{
+  position: relative;
 }
 
 .search input[type="search"]{
@@ -126,9 +162,13 @@ body{
 }
 
 .search button[type="submit"]{
+  position: absolute;
+  top: 11px;
+
+  display: none;
+
   background-color: transparent;
   border: 2px solid #000000;
-  display: none;
 }
 
 .search input[type="search"]:focus + button{
@@ -147,8 +187,44 @@ body{
   color: #434343;
 }
 
-.site-navigation{
+.header ul.user-navigation{
+  margin-left: 385px;
+  padding-left: 0;
+}
+
+.inner-header ul.user-navigation{
+  width: 230px;
+}
+
+.header ul.basket-navigation{
+  margin-left: 235px;
+  padding-left: 0;
+}
+
+.inner-header ul.basket-navigation{
+  margin-left: 70px;
+}
+
+ul.basket-navigation li{
+  margin-right: 60px;
+}
+
+.header .site-navigation{
   line-height: 0;
+  padding: 0;
+}
+
+.site-navigation li:first-child{
+  margin-right: 322px;
+}
+
+.site-navigation li:nth-child(2){
+  margin-right: 35px;
+}
+
+.site-navigation li:last-child{
+  margin-left: 105px;
+  margin-right: 0;
 }
 
 .site-navigation a{
@@ -161,9 +237,22 @@ body{
   text-transform: uppercase;
 }
 
+.site-navigation .catalog-link{
+  position: relative;
+}
+
 .site-navigation .drop-menu{
   display: none;
+  position: absolute;
   margin-top: -1px;
+}
+
+.drop-menu a{
+  margin: 0;
+}
+
+.drop-menu li:last-child{
+  margin: 0;
 }
 
 .site-navigation .drop-menu:hover{
@@ -272,7 +361,25 @@ body{
 
 /* ---- info ---- */
 
-.info h2{
+.main-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 95px;
+}
+
+.main-wrapper .info{
+  width: 475px;
+}
+
+.main-wrapper .info-map{
+  width: 580px;
+}
+
+.main-wrapper h2{
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   font-weight: 700;
@@ -280,7 +387,7 @@ body{
   letter-spacing: 0.21px;
 }
 
-.info p{
+.main-wrapper p{
   color: #464646;
 }
 
@@ -292,7 +399,7 @@ body{
   list-style: circle;
 }
 
-.info .map-link{
+.info-map .map-link{
   display: block;
 
   background: none;
@@ -301,8 +408,16 @@ body{
 /* ---- footer ---- */
 
 .footer{
+  padding-top: 65px;
+  padding-bottom: 65px;
+
   background-color: #464646;
   color: #ffffff;
+}
+
+.footer .footer-wrapper{
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .footer .footer-logo{
@@ -326,12 +441,56 @@ body{
 }
 
 .footer-user-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+
   line-height: 36px;
   letter-spacing: 0.15px;
   color: #FFFFFF;
 }
 
+.footer-user-navigation .footer-basket-navigation{
+  width: 215px;
+}
+
+.user-navigation-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-navigation-wrapper ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0;
+}
+
+.logined-user li{
+  margin-left: 20px;
+}
+
+.footer-site-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 70px;
+}
+
 .footer-site-navigation ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 430px;
+  margin: 0;
+
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -347,6 +506,28 @@ body{
   font-style: normal;
 }
 
+.footer-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social .social-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0;
+}
+
+.footer-social .devoration-line{
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
+}
+
 /* ---- modals ---- */
 .modal-write-us{
   display: none;
@@ -358,6 +539,13 @@ body{
 
 /* ---- catalog page ---- */
 
+.catalog .title-wrapper{
+  width: 1160px;
+  padding-left: 60px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .catalog h1{
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
@@ -367,7 +555,11 @@ body{
 }
 
 .catalog .breadcrumb{
+  display: flex;
+  flex-direction: row;
+
   list-style: none;
+  padding: 0;
 
   font-size: 14px;
   line-height: 24px;
@@ -377,13 +569,25 @@ body{
 
 .breadcrumb a{
   letter-spacing: 0.14px;
+  margin-right: 20px;
+}
+
+.main-wrap{
+  display: flex;
+  flex-direction: row;
+
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .filter{
   background-color: #efefef;
+  width: 270px;
 }
 
 .filter h2{
+  margin: 0;
+
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -416,6 +620,14 @@ body{
   list-style: none;
 }
 
+.filter button[type="submit"]{
+  margin: 0 auto;
+}
+
+.inner-wrap{
+  width: 870px;
+}
+
 .catalog-items ul{
   list-style: none;
 }
@@ -427,6 +639,8 @@ body{
   line-height: 24px;
   letter-spacing: 3.5px;
   text-transform: uppercase;
+
+  margin: 0;
 }
 
 .sort button{
@@ -449,6 +663,8 @@ body{
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.18px;
+
+  width: 256px;
 }
 
 .catalog-items .item-price{
@@ -483,6 +699,24 @@ body{
 .catalog-items img:hover ~ .to-basket,
 .catalog-items img:hover ~ .to-comparison{
   display: inline-block;
+}
+
+.items-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.items-list li{
+  width: 360px;
+  height: 470px;
+  margin-left: 40px;
+}
+
+.items-list .item-description{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .catalog-navigation a{
