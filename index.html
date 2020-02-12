@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <nav>
-        <a>
-          <img src="img/logo.svg" class="logo" width="163" height="35" alt="Логотип магазина Девайс">
+        <a class="logo">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
         <div class="header-wrapper">
           <form action="index.html" method="post" class="search">
@@ -50,14 +50,14 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
 <!-- Slider -->
-    <section class="slider-popular">
+    <section class="slider-popular container">
       <h2 class="visually-hidden">Популярные товары</h2>
-    	<div class="slider-popular-item">
-        <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+    	<div class="slider-popular-item active">
+        <img src="img/slider-1.png" width="404" height="486" alt="Самая длинная палка для селфи">
         <div class="item-content">
           <span class="slide-number">01</span>
-          <h3>Делай селфи, как Бен Стиллер!</h3>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <h3>Делай селфи,<br> как Бен Стиллер!</h3>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#" class="button">Подробнее</a>
           <dl>
             <div class="definition-item">
@@ -79,7 +79,7 @@
         <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
         <div class="item-content">
           <span class="slide-number">02</span>
-          <h3>Худеем правильно!</h3>
+          <h3>Худеем<br> правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#" class="button">Подробнее</a>
           <dl>
@@ -116,7 +116,7 @@
     	</div>
     </section>
 <!-- Popular -->
-      <section class="popular-category">
+      <section class="popular-category container">
         <h2 class="visually-hidden">Популярные категории</h2>
         <ul>
           <li>
@@ -158,53 +158,57 @@
         </ul>
       </section>
 <!-- Services -->
-      <div class="slider-services">
-        <div class="slider-services-navigation">
-          <button type="button" class="button">Доставка</button>
-          <button type="button" class="button">Гарантия</button>
-          <button type="button" class="button">Кредит</button>
-        </div>
-        <div class="slider-services-item">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="slider-services-item">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </div>
-        <div class="slider-services-item">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+      <div class="slider-services-background">
+        <div class="slider-services container">
+          <div class="slider-services-navigation">
+            <button type="button" class="button active">Доставка</button>
+            <button type="button" class="button">Гарантия</button>
+            <button type="button" class="button">Кредит</button>
+          </div>
+          <div class="slide-services-items">
+            <div class="slider-services-item active">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="slider-services-item">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </div>
+            <div class="slider-services-item">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
+          </div>
         </div>
       </div>
 <!-- Partners -->
-      <section class="partners">
+      <section class="partners container">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <ul>
           <li>
-            <a href="#" target="_blank">
+            <a href="#" class="partners-link-dji" target="_blank">
               <img src="img/logo-1-grayscale.png" width="260" height="100" alt="Логотип компании Dji">
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="#" class="partners-link-spgadgets" target="_blank">
               <img src="img/logo-2-grayscale.png" width="260" height="100" alt="Логотип компании SP Gadgets">
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="#" class="partners-link-gopro" target="_blank">
               <img src="img/logo-3-grayscale.png" width="260" height="100" alt="Логотип компании Go Pro">
             </a>
           </li>
           <li>
-            <a href="#" title="сайт компании Vive" target="_blank">
+            <a href="#" class="partners-link-vive" title="сайт компании Vive" target="_blank">
               <img src="img/logo-4-grayscale.png" width="260" height="100" alt="Логотип компании Vive">
             </a>
           </li>
         </ul>
       </section>
 <!-- Info -->
-      <div class="main-wrapper">
+      <div class="main-wrapper container">
           <section class="info">
             <h2>О нас</h2>
             <p>
@@ -260,7 +264,7 @@
     </section>
 <!-- footer -->
     <footer class="footer">
-      <div class="footer-wrapper">
+      <div class="container">
         <div class="footer-user-navigation">
           <a>
             <svg class="footer-logo" width="163" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 35">
