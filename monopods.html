@@ -57,10 +57,31 @@
           <li><a>Моноподы для селфи</a></li>
         </ul>
       </div>
+
 <!-- Filter & Sort -->
-      <div class="main-wrap container">
-        <section class="filter ">
-          <h2>Фильтр:</h2>
+
+    <div class="main-box">
+      <div class="filter-box">
+        <h2>Фильтр:</h2>
+      </div>
+      <div class="sort-box">
+        <section class="sort">
+          <div class="sort-wrapper">
+            <h2>Сортировка:</h2>
+            <button type="button" class="active">По цене</button>
+            <button type="button">По типу</button>
+            <button type="button">По популярности</button>
+          </div>
+          <div class="sort-direction">
+            <button type="button">По возрастанию</button>
+            <button type="button">По убыванию</button>
+          </div>
+        </section>
+      </div>
+    </div>
+      <div class="main-wrap">
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтр:</h2>
           <form action="monopods.html" method="post">
             <fieldset>
               <legend>Стоимость</legend>
@@ -109,18 +130,6 @@
           </form>
         </section>
         <div class="inner-wrap">
-          <section class="sort">
-            <div class="sort-wrapper">
-              <h2>Сортировка:</h2>
-              <button type="button" class="active">По цене</button>
-              <button type="button">По типу</button>
-              <button type="button">По популярности</button>
-            </div>
-            <div class="sort-direction">
-              <button type="button">По возрастанию</button>
-              <button type="button">По убыванию</button>
-            </div>
-          </section>
           <section class="catalog-items">
             <ul class="items-list">
               <li>
