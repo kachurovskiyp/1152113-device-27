@@ -488,17 +488,17 @@ ul.basket-navigation li{
   display: block;
   width: 260px;
   height: 100px;
+}
 
-  filter: grayscale(1);
+.partners .partner-logo{
   opacity: 0.2;
+  filter: url(#svg-grayscale);
 }
 
-.partners .partners-link:hover{
+.partners .partner-logo:hover{
   opacity: 1;
-  filter: grayscale(0);
+  filter: none;
 }
-
-
 
 /* ---- info ---- */
 
@@ -919,18 +919,18 @@ ul.basket-navigation li{
   background-color: #ebebeb;
 }
 
-.catalog-navigation .outer-catalog-navigation{
+.catalog-navigation .catalog-navigation-wrap{
   display: flex;
   justify-content: space-between;
 
   padding: 0;
-  list-style: none;
 }
 
 .catalog-navigation .inner-catalog-navigation{
   display: flex;
   justify-content: space-between;
 
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -950,6 +950,12 @@ ul.basket-navigation li{
 
 .catalog-navigation a.inactive{
   opacity: 0.3;
+}
+
+.catalog-navigation a.transition-direction{
+  display: block;
+  height: 70px;
+  line-height: 70px;
 }
 
 .catalog-navigation a.transition-direction:hover{
