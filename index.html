@@ -19,25 +19,31 @@
               <button type="submit">Найти</button>
           </form>
           <ul class="user-navigation">
-            <li><a href="#">Войти</a></li>
+            <li><a href="#" class="user-login-link">Войти</a></li>
           </ul>
           <ul class="basket-navigation">
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li><a href="#" class="comparison-link">Сравнить</a></li>
+            <li><a href="#" class="basket-link">Корзина</a></li>
           </ul>
         </div>
         <div class="header-wrapper">
           <ul class="site-navigation">
             <li>
               <a href="catalog.html" class="catalog-link">Каталог товаров</a>
-                <ul class="drop-menu">
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="monopods.html">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн-камеры</a></li>
-                  <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
-                  <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
+                <div class="drop-menu">
+                  <div class="drop-menu-column">
+                    <a href="#">Виртуальная реальность</a>
+                    <a href="monopods.html">Моноподы для селфи</a>
+                    <a href="#">Экшн-камеры</a>
+                  </div>
+                  <div class="drop-menu-column">
+                    <a href="#">Фитнес-браслеты</a>
+                    <a href="#">Умные часы</a>
+                  </div>
+                  <div class="drop-menu-column">
+                    <a href="#">Квадрокоптеры</a>
+                  </div>
+                </div>
             </li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
@@ -52,7 +58,7 @@
 <!-- Slider -->
     <section class="slider-popular container">
       <h2 class="visually-hidden">Популярные товары</h2>
-    	<div class="slider-popular-item">
+    	<div class="slider-popular-item active">
         <img src="img/slider-1.png" width="404" height="486" alt="Самая длинная палка для селфи">
         <div class="item-content">
           <span class="slide-number">01</span>
@@ -90,7 +96,7 @@
           </dl>
         </div>
       </div>
-    	<div class="slider-popular-item active">
+    	<div class="slider-popular-item">
         <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер оснащеный мощным лазером">
         <div class="item-content">
           <span class="slide-number">03</span>
@@ -302,11 +308,11 @@
           </a>
           <div class="user-navigation-wrapper">
             <ul>
-              <li><a href="#">Войти</a></li>
+              <li><a href="#" class="login-link">Войти</a></li>
             </ul>
             <ul class="footer-basket-navigation">
-              <li><a href="#">Сравнить</a></li>
-              <li><a href="#">Корзина</a></li>
+              <li><a href="#" class="comparison-link">Сравнить</a></li>
+              <li><a href="#" class="basket-link">Корзина</a></li>
             </ul>
           </div>
         </div>
@@ -326,9 +332,9 @@
         <div class="footer-social">
           <div class="devoration-line"></div>
           <ul class="social-links">
-            <li><a href="#" title="Facebook" target="_blank">Facebook</a></li>
-            <li><a href="#" title="Instagram" target="_blank">Instagram</a></li>
-            <li><a href="#" title="Twitter" target="_blank">Twitter</a></li>
+            <li><a href="#" title="Facebook" class="facebook-link" target="_blank"></a></li>
+            <li><a href="#" title="Instagram" class="instagram-link" target="_blank"></a></li>
+            <li><a href="#" title="Twitter" class="twitter-link" target="_blank"></a></li>
           </ul>
           <div class="copyright">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
