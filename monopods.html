@@ -79,8 +79,16 @@
             <button type="button">По популярности</button>
           </div>
           <div class="sort-direction">
-            <button type="button">По возрастанию</button>
-            <button type="button">По убыванию</button>
+            <button type="button" class="to-up" aria-label="Сортировка по возрастанию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
+            </button>
+            <button type="button" class="to-down active" aria-label="Сортировка по убыванию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+            </button>
           </div>
         </section>
       </div>
@@ -89,10 +97,19 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтр:</h2>
           <form action="monopods.html" method="post">
-            <fieldset>
+            <fieldset class="bordered-top">
               <legend>Стоимость</legend>
-              <input type="range" name="price" id="price" value="0" min="0" max="10000">
+              <input type="range" class="visually-hidden" name="price" id="price" value="0" min="0" max="10000">
               <label for="price" class="visually-hidden">Стоимость</label>
+              <div class="range-wrapper">
+                <div class="range-scale"></div>
+                <button type="button" class="range-min">
+                  <span>от 0</span>
+                </button>
+                <button type="button" class="range-max">
+                  <span>до 5000</span>
+                </button>
+              </div>
             </fieldset>
             <fieldset class="bordered-top">
               <legend>Цвет</legend>
@@ -141,56 +158,64 @@
           <section class="catalog-items">
             <ul class="items-list">
               <li class="item">
-                <img class="item-foto" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <div class="item-foto">
+                  <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <div class="button-box">
+                    <a href="#" class="button to-basket">В корзину</a>
+                    <a href="#" class="to-comparison">Добавить к сравнению</a>
+                  </div>
+                </div>
                 <div class="item-description">
                   <a href="#">
                     <h3 class="item-title">Любительская селфи-палка</h3>
                   </a>
                   <p class="item-price">500 руб</p>
                 </div>
-                <div class="button-box">
-                  <a href="#" class="button to-basket">В корзину</a>
-                </div>
-                <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
               <li class="item">
-                <img class="item-foto" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+                <div class="item-foto">
+                  <img class="item-foto" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+                  <div class="button-box">
+                    <a href="#" class="button to-basket">В корзину</a>
+                    <a href="#" class="to-comparison">Добавить к сравнению</a>
+                  </div>
+                </div>
                 <div class="item-description">
                   <a href="#">
                     <h3 class="item-title">Профессиональная селфи-палка </h3>
                   </a>
                   <p class="item-price">1500 руб</p>
                 </div>
-                <div class="button-box">
-                  <a href="#" class="button to-basket">В корзину</a>
-                </div>
-                <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
               <li class="item">
-                <img class="item-foto" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <div class="item-foto">
+                  <img class="item-foto" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <div class="button-box">
+                    <a href="#" class="button to-basket">В корзину</a>
+                    <a href="#" class="to-comparison">Добавить к сравнению</a>
+                  </div>
+                </div>
                 <div class="item-description">
                   <a href="#">
                     <h3 class="item-title">Непотопляемая селфи-палка</h3>
                   </a>
                   <p class="item-price">2500 руб</p>
                 </div>
-                <div class="button-box">
-                  <a href="#" class="button to-basket">В корзину</a>
-                </div>
-                <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
               <li class="item">
-                <img class="item-foto" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <div class="item-foto">
+                  <img class="item-foto" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                  <div class="button-box">
+                    <a href="#" class="button to-basket">В корзину</a>
+                    <a href="#" class="to-comparison">Добавить к сравнению</a>
+                  </div>
+                </div>
                 <div class="item-description">
                   <a href="#">
                     <h3 class="item-title">Селфи-палка «Следуй за мной»</h3>
                   </a>
                   <p class="item-price">4900 руб</p>
                 </div>
-                <div class="button-box">
-                  <a href="#" class="button to-basket">В корзину</a>
-                </div>
-                <a href="#" class="to-comparison">Добавить к сравнению</a>
               </li>
             </ul>
           </section>

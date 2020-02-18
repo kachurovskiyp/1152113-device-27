@@ -116,9 +116,9 @@
         </div>
       </div>
     	<div class="slider-popular-navigation">
-    		<button type="button">1</button>
-    		<button type="button">2</button>
-    		<button type="button">3</button>
+    		<button type="button" class="slider-button active" aria-label="slider 1"></button>
+    		<button type="button" class="slider-button" aria-label="slider 2"></button>
+    		<button type="button" class="slider-button" aria-label="slider 3"></button>
     	</div>
     </section>
 <!-- Popular -->
@@ -127,37 +127,37 @@
         <ul>
           <li>
             <a href="#" class="popular-category-link">
-              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
+              <div class="popular-vr"></div>
               <p>Виртуальная реальность</p>
             </a>
           </li>
           <li>
-            <a href="#" class="popular-category-link">
-              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
+            <a href="monopods.html" class="popular-category-link">
+              <div class="popular-monopods"></div>
               <p>Моноподы для селфи</p>
             </a>
           </li>
           <li>
             <a href="#" class="popular-category-link">
-              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
+              <div class="popular-camers"></div>
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li>
             <a href="#" class="popular-category-link">
-              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
+              <div class="popular-bangles"></div>
               <p>Фитнес-браслеты</p>
             </a>
           </li>
           <li>
             <a href="#" class="popular-category-link">
-              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
+              <div class="popular-clocks"></div>
               <p>Умные часы</p>
             </a>
           </li>
           <li>
             <a href="#" class="popular-category-link">
-              <div></div> <!-- Размер и фон будет реализовни при стилизации -->
+              <div class="popular-quadrocopters"></div>
               <p>Квадрокоптеры</p>
             </a>
           </li>
@@ -167,20 +167,22 @@
       <div class="slider-services-background">
         <div class="slider-services container">
           <div class="slider-services-navigation">
-            <button type="button" class="button active">Доставка</button>
-            <button type="button" class="button">Гарантия</button>
-            <button type="button" class="button">Кредит</button>
+            <div class="button-box">
+              <button type="button" class="button button-delivery">Доставка</button>
+              <button type="button" class="button button-warranty">Гарантия</button>
+              <button type="button" class="button button-credit active">Кредит</button>
+            </div>
           </div>
-          <div class="slide-services-items">
-            <div class="slider-services-item active">
+          <div class="slider-services-items">
+            <div class="slider-services-item slider-services-delivery">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="slider-services-item">
+            <div class="slider-services-item slider-services-warranty">
               <h3>Гарантия</h3>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </div>
-            <div class="slider-services-item">
+            <div class="slider-services-item slider-services-credit active">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </div>
@@ -206,11 +208,6 @@
           <li>
             <a href="#" class="partners-link" target="_blank" title="Логотип компании SP Gadgets">
               <svg width="260" height="100">
-                <defs>
-                  <filter id="svg-grayscale">
-                    <fecolormatrix type="saturate" values="0" />
-                  </filter>
-                </defs>
                 <image xlink:href="img/logo-2.png" class="partner-logo" width="100%" height="100%"/>
               </svg>
             </a>
@@ -218,11 +215,6 @@
           <li>
             <a href="#" class="partners-link" target="_blank" title="Логотип компании Go Pro">
               <svg width="260" height="100">
-                <defs>
-                  <filter id="svg-grayscale">
-                    <fecolormatrix type="saturate" values="0" />
-                  </filter>
-                </defs>
                 <image xlink:href="img/logo-3.png" class="partner-logo" width="100%" height="100%"/>
               </svg>
             </a>
@@ -230,11 +222,6 @@
           <li>
             <a href="#" class="partners-link" target="_blank" title="Логотип компании Vive">
               <svg width="260" height="100">
-                <defs>
-                  <filter id="svg-grayscale">
-                    <fecolormatrix type="saturate" values="0" />
-                  </filter>
-                </defs>
                 <image xlink:href="img/logo-4.png" class="partner-logo" width="100%" height="100%"/>
               </svg>
             </a>
