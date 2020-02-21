@@ -63,40 +63,38 @@
       </div>
 
 <!-- Filter & Sort -->
-
-    <div class="main-box">
-      <div class="filter-box">
-        <h2>Фильтр:</h2>
-      </div>
-      <div class="sort-box">
+      <div class="flex-wrap">
+        <div class="left-spacer"></div>
+        <div class="center-wrap">
+          <div class="main-box">
+        <h2 class="filter-header">Фильтр:</h2>
         <section class="sort">
-          <div class="sort-wrapper">
-            <h2>Сортировка:</h2>
-            <button type="button" class="active">По цене</button>
-            <button type="button">По типу</button>
-            <button type="button">По популярности</button>
-          </div>
-          <div class="sort-direction">
-            <button type="button" class="to-up" aria-label="Сортировка по возрастанию">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                <path d="M5.5 0L0 10h11z"/>
-              </svg>
-            </button>
-            <button type="button" class="to-down active" aria-label="Сортировка по убыванию">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                <path d="M5.5 10L0 0h11"/>
-              </svg>
-            </button>
-          </div>
-        </section>
+            <div class="sort-wrapper">
+              <h2>Сортировка:</h2>
+              <button type="button" class="active">По цене</button>
+              <button type="button">По типу</button>
+              <button type="button">По популярности</button>
+            </div>
+            <div class="sort-direction">
+              <button type="button" class="to-up" aria-label="Сортировка по возрастанию">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 0L0 10h11z"/>
+                </svg>
+              </button>
+              <button type="button" class="to-down active" aria-label="Сортировка по убыванию">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 10L0 0h11"/>
+                </svg>
+              </button>
+            </div>
+          </section>
       </div>
-    </div>
-      <div class="main-wrap">
+          <div class="main-wrap">
         <section class="filter">
           <h2 class="visually-hidden">Фильтр:</h2>
           <form action="monopods.html" method="post">
             <fieldset class="bordered-top">
-              <legend>Стоимость</legend>
+              <p class="legend">Стоимость</p>
               <input type="range" class="visually-hidden" name="price" id="price" value="0" min="0" max="10000">
               <label for="price" class="visually-hidden">Стоимость</label>
               <div class="range-wrapper">
@@ -110,7 +108,7 @@
               </div>
             </fieldset>
             <fieldset class="color-list-set bordered-top">
-              <legend>Цвет</legend>
+              <p class="legend">Цвет</p>
               <ul class="color-list">
                 <li>
                   <input type="checkbox" name="black" id="filter-color-black" checked>
@@ -135,7 +133,7 @@
               </ul>
             </fieldset>
             <fieldset class="bluetooth-set bordered-top">
-              <legend>Bluetooth</legend>
+              <p class="legend">Bluetooth</p>
               <ul class="bluetooth-choice">
                 <li>
                   <input type="radio" name="bluetooth" value="yes" id="filter-bluetooth-yes" checked>
@@ -200,7 +198,7 @@
                   <p class="item-price">2500 руб</p>
                 </div>
               </li>
-              <li class="item">
+              <li class="item new">
                 <div class="item-foto">
                   <img class="item-foto" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   <div class="button-box">
@@ -237,6 +235,9 @@
           </section>
         </div> <!-- end of inner wrap -->
       </div>  <!-- end of main wrap -->
+        </div>
+        <div class="right-spacer"></div>
+      </div>
     </main>
     <footer class="footer inner-footer">
       <div class="container">
