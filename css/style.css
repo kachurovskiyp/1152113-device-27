@@ -113,6 +113,7 @@ body{
 .button{
   position: relative;
   display: block;
+  
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -128,11 +129,13 @@ body{
 
 .button::before{
   position: absolute;
+  z-index: -1;
+
   width: 260px;
   height: 8px;
+
   background-color: #f0c52e;
   content: "";
-  z-index: -1;
 }
 
 .button:active{
@@ -165,7 +168,9 @@ body{
 .header .logo{
   position: absolute;
   top: -18px;
+
   margin-left: 58px;
+
   cursor: pointer;
 }
 
@@ -177,6 +182,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   width: 1045px;
+
   margin: 0 auto;
   padding-bottom: 34px;
 }
@@ -185,6 +191,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+
   list-style: none;
 }
 
@@ -206,10 +213,6 @@ body{
 }
 
 .search input[type="search"]{
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.15px;
-
   padding-left: 39px;
   padding-bottom: 7px;
   width: 355px;
@@ -217,6 +220,10 @@ body{
   border: 0;
   background-color: transparent;
   background: url("../img/search.svg") no-repeat 4px center;
+
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
 
   opacity: 0.3;
 }
@@ -226,10 +233,11 @@ body{
 }
 
 .search input[type="search"]:focus {
-  outline: 0;
+  margin-bottom: -2px;
+
   opacity: 1;
   border-bottom: 2px solid #000000;
-  margin-bottom: -2px;
+  outline: 0;
 }
 
 .search button[type="submit"]{
@@ -254,11 +262,12 @@ body{
 .search button[type="submit"]:focus{
   display: inline-block;
   vertical-align: middle;
-  outline: 0;
-  background-color: #000000;
-  color: #ffffff;
 
   margin-bottom: -2px;
+
+  background-color: #000000;
+  color: #ffffff;
+  outline: 0;
 }
 
 .search button[type="submit"]:active{
@@ -302,7 +311,9 @@ ul.basket-navigation li{
 .header .site-navigation{
   display: flex;
   flex-wrap: wrap;
+
   width: 1045px;
+
   padding: 0;
   margin: 0 auto;
 
@@ -346,12 +357,13 @@ ul.basket-navigation li{
   flex-wrap: wrap;
 
   position: absolute;
+  width: 1080px;
+  z-index: 3;
+
   padding: 0;
   padding-top: 22px;
   padding-bottom: 33px;
   margin-top: -1px;
-  width: 1080px;
-  z-index: 3;
 
   background-color: #f7e296;
 }
@@ -446,20 +458,23 @@ ul.basket-navigation li{
 
 .slider-popular .slide-number::before{
   display: block;
+  width: 100px;
+  height: 7px;
+
   position: absolute;
   top: 50px;
   left: -330px;
-  width: 100px;
-  height: 7px;
+
   background-color: #ffffff;
   content: "";
 }
 
 .slider-popular h3{
   position: relative;
+  z-index: 2;
+
   margin-top: 77px;
   margin-bottom: 20px;
-  z-index: 2;
 
   font-family: Gilroy;
   font-weight: 800;
@@ -501,6 +516,7 @@ ul.basket-navigation li{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   margin-right: 75px;
 }
 
@@ -527,20 +543,23 @@ ul.basket-navigation li{
 }
 
 .slider-popular-navigation{
+  display: flex;
+  justify-content: space-between;
+
   position: absolute;
   bottom: 154px;
   right: 84px;
 
   width: 79px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .slider-popular-navigation .slider-button{
   border: none;
   border-radius: 50%;
+
   width: 12px;
   height: 12px;
+
   cursor: pointer;
   background: url("../img/slider-button-empty.svg") no-repeat center center;
 }
@@ -554,6 +573,7 @@ ul.basket-navigation li{
 .popular-category ul{
   display: flex;
   flex-wrap: wrap;
+
   margin-bottom: 165px;
   margin-left: -2px;
   padding: 0;
@@ -584,24 +604,27 @@ ul.basket-navigation li{
 }
 
 .popular-category div{
-  width: 160px;
-  height: 160px;
-  margin-bottom: 32px;
-  background-color: #f7e296;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 160px;
+  height: 160px;
+
+  margin-bottom: 32px;
+
+  background-color: #f7e296;
 }
 
 .popular-category div:hover{
   background-color: #f0c52e;
 }
 
-.popular-category-link svg{
+ .popular-category-box svg{
   fill: #363636;
 }
 
-.popular-category div:active svg{
+ .popular-category-box:active svg{
   opacity: 0.3;
 }
 
@@ -656,6 +679,7 @@ ul.basket-navigation li{
   padding-top: 35px;
   margin-top: -105px;
   margin-bottom: 65px;
+
   width: 282px;
   min-height: 325px;
 
@@ -664,11 +688,10 @@ ul.basket-navigation li{
 
 .slider-services-navigation .button{
   height: 40px;
-  background-color: transparent;
   margin-bottom: 24px;
 
-
-    line-height: 24px;
+  background-color: transparent;
+  line-height: 24px;
 }
 
 .slider-services-navigation .button:active{
@@ -732,11 +755,12 @@ ul.basket-navigation li{
 
 .slider-services-delivery::before{
   display: block;
+  width: 136px;
+  height: 164px;
+
   position: absolute;
   top: 12px;
   right: -264px;
-  width: 136px;
-  height: 164px;
 
   background: url("../img/delivery.svg") no-repeat center center ;
   content: "";
@@ -744,11 +768,12 @@ ul.basket-navigation li{
 
 .slider-services-warranty::before{
   display: block;
+  width: 171px;
+  height: 195px;
+
   position: absolute;
   top: 10px;
   right: -230px;
-  width: 171px;
-  height: 195px;
 
   background: url("../img/warranty.svg") no-repeat center center ;
   content: "";
@@ -756,11 +781,12 @@ ul.basket-navigation li{
 
 .slider-services-credit::before{
   display: block;
+  width: 156px;
+  height: 188px;
+
   position: absolute;
   top: 10px;
   right: -230px;
-  width: 156px;
-  height: 188px;
 
   background: url("../img/credit.svg") no-repeat center center ;
   content: "";
@@ -774,6 +800,7 @@ ul.basket-navigation li{
 .slider-services-item h3{
   margin-top: 52px;
   margin-bottom: 31px;
+
   font-family: Gilroy;
   font-weight: 800;
   font-size: 47px;
@@ -862,10 +889,11 @@ ul.basket-navigation li{
 
 .info h2::before{
   display: block;
-  position: absolute;
+
   width: 80px;
   height: 7px;
 
+  position: absolute;
   top: -52px;
 
   background-color: #000000;
@@ -884,8 +912,8 @@ ul.basket-navigation li{
 }
 
 .info .delivery-list{
-
   list-style: none;
+
   padding: 0;
   margin-top: 65px;
   margin-bottom: 63px;
@@ -903,14 +931,17 @@ ul.basket-navigation li{
 
 .delivery-list li::before{
   display: block;
+  width: 8px;
+  height: 8px;
+
   position: absolute;
   top: 40%;
   left: 2px;
-  width: 8px;
-  height: 8px;
+
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   background-color: #ffffff;
+
   content: "";
 }
 
@@ -931,8 +962,10 @@ ul.basket-navigation li{
 
 .info-map .map-link{
   display: block;
+
   margin-top: 38px;
   margin-bottom: 70px;
+
   background: none;
 }
 
@@ -942,10 +975,10 @@ ul.basket-navigation li{
 
 .info-map h2::before{
   display: block;
-  position: absolute;
   width: 80px;
   height: 7px;
 
+  position: absolute;
   top: -52px;
   left: 2px;
 
@@ -985,6 +1018,7 @@ ul.basket-navigation li{
 .footer a{
   display: block;
   margin-left: -2px;
+
   color: #ffffff;
 }
 
@@ -1034,6 +1068,7 @@ ul.basket-navigation li{
 .user-navigation-wrapper{
   display: flex;
   flex-wrap: wrap;
+
   margin-top: -2px;
   min-width: 325px;
 }
@@ -1118,6 +1153,7 @@ ul.basket-navigation li{
   display: block;
   width: 35px;
   height: 35px;
+
   margin-right: 20px;
   border-radius: 50%;
 
@@ -1166,12 +1202,16 @@ ul.basket-navigation li{
   position: absolute;
   right: 20px;
   top: 20px;
+
   z-index: 4;
+
   width: 55px;
   height: 55px;
+
   border: none;
   border-radius: 50%;
   background: #f7e296;
+
   cursor: pointer;
 }
 
@@ -1180,9 +1220,12 @@ ul.basket-navigation li{
   position: absolute;
   top: 25px;
   left: 13px;
+
   width: 30px;
   height: 3px;
+
   background-color: #ffffff;
+
   content: "";
 }
 
@@ -1204,9 +1247,11 @@ ul.basket-navigation li{
 
 .modal{
   display: none;
+
   position: fixed;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
   z-index: 3;
 
@@ -1253,11 +1298,12 @@ ul.basket-navigation li{
 }
 
 .modal-form-wrap p{
+  display: flex;
+  flex-direction: column;
+
   width: 360px;
   margin-right: 40px;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-textarea{
@@ -1384,13 +1430,13 @@ header.inner-header{
 }
 
 .catalog h1{
+  margin-bottom: 26px;
+
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 0.5px;
-
-  margin-bottom: 26px;
 }
 
 .catalog .breadcrumb{
@@ -1401,7 +1447,6 @@ header.inner-header{
 
   font-size: 14px;
   line-height: 24px;
-
 }
 
 .breadcrumb li{
@@ -1416,11 +1461,12 @@ header.inner-header{
 }
 
 .breadcrumb a{
+  opacity: 0.3;
+
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.14px;
   color: #000000;
-  opacity: 0.3;
 }
 
 .breadcrumb a:hover{
@@ -1448,15 +1494,17 @@ header.inner-header{
 
 .right-spacer{
   flex-grow: 1;
-  background: linear-gradient(to bottom, #ebebeb 5.45%, #ffffff 5.45%, #ffffff 100%);
   z-index: 1;
+  background: linear-gradient(to bottom, #ebebeb 5.45%, #ffffff 5.45%, #ffffff 100%);
 }
 
 .filter{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+
   width: 332px;
+
   background-color: #efefef;
 }
 
@@ -1479,11 +1527,15 @@ header.inner-header{
 
 .filter .bordered-top::before{
   display: block;
+
   position: absolute;
+  top: -13px;
+
   width: 200px;
   height: 2px;
-  top: -13px;
+
   background-color: #000000;
+
   content: "";
 }
 
@@ -1509,35 +1561,44 @@ header.inner-header{
 
 .filter .range-scale{
   position: relative;
+
   width: 200px;
   height: 2px;
   margin-top: 40px;
+
   background-color: #dbdbdb;
 }
 
 .filter .range-scale::after{
   position: absolute;
+
   width: 120px;
   height: 2px;
+
   background-color: #91c92f;
+
   content: "";
 }
 
 .range-wrapper button{
   position: absolute;
-  width: 20px;
-  height: 20px;
   top: 49px;
   left: -6px;
+
+  width: 20px;
+  height: 20px;
+
   border: none;
   border-radius: 50%;
   background-color: #ffffff;
+
   cursor: pointer;
 }
 
 .range-wrapper button:active{
   width: 22px;
   height: 22px;
+
   top: 54px;
   left: -11px;
 }
@@ -1546,12 +1607,16 @@ header.inner-header{
   position: absolute;
   top: 50%;
   left: 50%;
+
   width: 4px;
   height: 4px;
+
   margin-top: -2px;
   margin-left: -2px;
+
   background-color: #ababab;
   border-radius: 50%;
+
   content: "";
 }
 
@@ -1561,8 +1626,10 @@ header.inner-header{
 
 .range-wrapper span{
   display: block;
+
   position: absolute;
   top: 20px;
+
   opacity: 0.2;
 
   font-family: 'Gilroy', Arial, sans-serif;
@@ -1592,8 +1659,10 @@ header.inner-header{
 .color-list label{
   display: block;
   height: 23px;
+
   padding-left: 40px;
   margin-bottom: 17px;
+
   background: url("../img/checkbox-off.svg") no-repeat left center;
   cursor: pointer;
 
@@ -1628,10 +1697,13 @@ input[type="checkbox"]:disabled + label.color-list-label{
 .bluetooth-choice label{
   display: block;
   height: 25px;
+
   padding-left: 40px;
   margin-bottom: 16px;
+
   background: url("../img/radio-off.svg") no-repeat left center;
   cursor: pointer;
+
   line-height: 25px;
 }
 
@@ -1684,8 +1756,10 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
   position: relative;
   width: 332px;
   height: 70px;
+
   margin: 0;
   padding-left: 66px;
+
   background-color: #dbdbdb;
 
   font-family: 'Gilroy', Arial, sans-serif;
@@ -1698,13 +1772,17 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 
 .main-box h2::before{
   display: none;
-  content: "";
+
   position: absolute;
   left: 0;
   top: 0;
+
   height: 76px;
   width: 100%;
+
   background-color: #dbdbdb;
+
+  content: "";
 }
 
 .main-box .sort{
@@ -1729,6 +1807,7 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 
 .sort h2{
   display: block;
+
   margin: 0;
   margin-right: 27px;
   padding-left: 2px;
@@ -1742,13 +1821,15 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 }
 
 .sort button{
+  opacity: 0.3;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  cursor: pointer;
-  opacity: 0.3;
-  border: none;
-  background-color: transparent;
 }
 
 .sort button:hover{
@@ -1771,10 +1852,13 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 .sort-direction button{
   display: inline-block;
   vertical-align: baseline;
+
   width: 11px;
   height: 10px;
-  cursor: pointer;
+
   margin-right: 13px;
+
+  cursor: pointer;
 }
 
 .sort-direction button:last-child{
@@ -1805,15 +1889,14 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 }
 
 .catalog-items .item-title{
+  margin-top: 23px;
+  width: 256px;
+
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.25px;
-
-
-  margin-top: 23px;
-  width: 256px;
 }
 
 .catalog-items .without-letterspacing{
@@ -1821,19 +1904,19 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 }
 
 .catalog-items .item-price{
+  margin-top: 23px;
+
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
   color: #464646;
-
-  margin-top: 23px;
 }
 
 .items-list .item{
   position: relative;
-  margin-bottom: 27px;
   width: 43.3%;
   min-height: 470px;
+  margin-bottom: 27px;
 }
 
 .items-list .item:nth-child(1n){
@@ -1862,11 +1945,12 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 }
 
 .catalog-items .to-comparison{
+  opacity: 0.5;
+
   margin-left: -15px;
   margin-top: 10px;
 
   font-size: 13px;
-  opacity: 0.5;
 }
 
 .catalog-items .to-comparison:hover{
@@ -1889,14 +1973,17 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 
 .item.new .item-foto::after{
   display: block;
-  position: absolute;
   width: 60px;
   height: 60px;
+
+  position: absolute;
   top: 29px;
   right: 27px;
+  z-index: 2;
+
   background-color: transparent;
   background-image: url(../img/label-new.png);
-  z-index: 2;
+
   content: "";
 }
 
@@ -1912,11 +1999,14 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 .catalog-navigation{
   width: 760px;
   height: 70px;
+
   margin-top: -7px;
   margin-left: 8.8%;
   margin-bottom: 75px;
+
   padding-left: 30px;
   padding-right: 25px;
+
   line-height: 70px;
 
   background-color: #ebebeb;
@@ -1935,6 +2025,7 @@ input[type="radio"]:disabled + label.bluetooth-choice-label{
 
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
