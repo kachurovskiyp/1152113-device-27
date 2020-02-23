@@ -20,6 +20,19 @@ try {
 writeUsLink.addEventListener("click", function(evt){
   evt.preventDefault();
   modalWriteUs.classList.add("modal-show");
+
+  if (inputName.classList.contains("invalid")){
+    inputName.classList.remove("invalid");
+  }
+
+  if (inputEmail.classList.contains("invalid")){
+    inputEmail.classList.remove("invalid");
+  }
+
+  if (inputText.classList.contains("invalid")){
+    inputText.classList.remove("invalid");
+  }
+
   if (storageName && storageEmail) {
     inputName.value = storageName;
     inputEmail.value = storageEmail;
@@ -37,10 +50,25 @@ modalClose.addEventListener("click", function(evt){
 
 formWriteUs.addEventListener("submit", function(evt){
   if (!inputName.value || !inputEmail.value || !inputText.value) {
+
     evt.preventDefault();
+
     modalWriteUs.classList.remove("modal-error");
     modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
     modalWriteUs.classList.add("modal-error");
+
+    if(!inputName.value){
+      inputName.classList.add("invalid");
+    }
+
+    if(!inputEmail.value){
+      inputEmail.classList.add("invalid");
+    }
+
+    if(!inputText.value){
+      inputText.classList.add("invalid");
+    }
+
   } else {
     if (isStorageSupport) {
       localStorage.setItem("userName", inputName.value);
